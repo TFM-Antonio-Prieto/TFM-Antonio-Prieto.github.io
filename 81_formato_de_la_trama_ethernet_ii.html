@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>8.1 Formato de la trama Ethernet II | La capa de enlace de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Varios" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<link rel="stylesheet" type="text/css" href="scrambled-list.css" />
+<script type="text/javascript" src="scrambled-list.js"></script>
+<link rel="stylesheet" type="text/css" href="candado-activity.css" />
+<script type="text/javascript" src="candado-activity.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-216"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">La capa de enlace de datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">La capa de enlace de datos</a></li>
+   <li><a href="1_repaso_de_la_pila_osi.html" class="no-ch">1. Repaso de la Pila OSI</a></li>
+   <li><a href="2_qu_es_la_capa_de_enlace_de_datos.html" class="daddy">2. Qué es la capa de enlace de datos</a>
+   <ul class="other-section">
+      <li><a href="21_servicios_de_la_capa_de_enlace_de_datos.html" class="no-ch">2.1 Servicios de la capa de enlace de datos</a></li>
+   </ul>
+   </li>
+   <li><a href="3_identificacin_mediante_direccionamiento_fsico.html" class="no-ch">3. Identificación mediante direccionamiento físico</a></li>
+   <li><a href="4_mtodos_para_acceder_al_medio.html" class="no-ch">4. Métodos para acceder al medio</a></li>
+   <li><a href="5_mtodos_de_control_de_errores.html" class="no-ch">5. Métodos de control de errores</a></li>
+   <li><a href="6_mtodos_de_conmutacin_de_tramas.html" class="no-ch">6. Métodos de conmutación de tramas</a></li>
+   <li><a href="7_protocolos_de_enlace_en_las_lan.html" class="no-ch">7. Protocolos de enlace en las LAN</a></li>
+   <li class="current-page-parent"><a href="8_el_protocolo_ethernet_ii.html" class="current-page-parent daddy">8. El protocolo Ethernet II</a>
+   <ul>
+      <li id="active"><a href="81_formato_de_la_trama_ethernet_ii.html" class="active no-ch">8.1 Formato de la trama Ethernet II</a></li>
+   </ul>
+   </li>
+   <li><a href="9_dispositivos_que_funcionan_al_nivel_de_la_capa_de_enlace_de_datos.html" class="no-ch">9. Dispositivos que funcionan al nivel de la capa de enlace de datos</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="8_el_protocolo_ethernet_ii.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>11</strong> de <strong>13</strong></span> <span class="sep">| </span><a href="9_dispositivos_que_funcionan_al_nivel_de_la_capa_de_enlace_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">8.1 Formato de la trama Ethernet II</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id1074">
+<div class="iDevice emphasis0" >
+<div id="ta1074_431_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Diccionario</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Preámbulo</h2>
+<p><img src="preambulo.jpeg" alt="Una variedad de tipos de enchufes" title="Estándar" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Introducción a un tema o un libro que no va de forma directa sino que va dando un rodeo antes de comenzar.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>El prólogo de un libro.</p>
+</dd>
+</dl>
+<h2>Coaxial</h2>
+<p><img src="coaxial.jpeg" title="Coaxial" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125" alt="Coaxial"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Coaxial significa que dos o más figuras comparten un eje común; es el análogo lineal tridimensional de concéntrico.</p>
+<p>El cable coaxial, como ejemplo común, tiene un hilo conductor en el centro, un conductor externo circunferencial; ambos están separados por un medio aislante llamado dieléctrico.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>El cable de antena de la tv digital.</p>
+</dd>
+</dl>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id1075">
+<div class="iDevice emphasis0" >
+<div id="ta1075_964_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure exe-image float-left license-custom" style="width: 250px;"><img src="retor_adultos_conbocadillo.gif" alt="Rétor dice" width="250" height="250" style="float: left;"></figure>
+<p><br><br>Ya casi estamos terminado.</p>
+<p>Vamos a repasar el formato de la trama Ethernet II. Cuando usemos WireShark lo que vamos a hacer es capturar tramas Ethernet, si no conoces su formato no podrás entender lo que estemos haciendo.</p>
+<p><strong>¡Adelante!</strong></p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_galeria" id="id1077">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_galeria.svg)"><h1 class="iDeviceTitle">2. Los campos de la trama Ethernet II</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1077_433_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure exe-image position-center license-pd" style="width: 1000px;"><img src="FormatoTrama.png" alt="Formato trama Ethernet II" title="Formato trama Ethernet II" width="1000" height="133">
+<figcaption class="figcaption"></figcaption>
+</figure></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_reproduccion" id="id1078">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reproduccion.svg)"><h1 class="iDeviceTitle">Video: La pila OSI</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1078_971_2" class="block iDevice_content">
+<div class="exe-text"><p>Hola, aquí tienes un vídeo muy corto para que puedas recordar lo que hemos dado en clase. Míralo antes de hacer los ejercicios.</p>
+<figure class="exe-figure exe-media position-center" style="width: 600px;"><video width="600" height="338" controls="controls">
+<source src="https://juanivazquez.es/videos/video_8_2.mp4" type="video/mp4" /></video>
+<figcaption class="figcaption"><span class="title"><em>Formato de la trama Ethernet</em></span></figcaption>
+</figure>
+<p style="text-align: center;"></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id1079">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">Chuletario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1079_434_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><h2><span style="font-size: 14pt;">La trama Ethernet II tiene el siguiente formato:</span></h2>
+<ol>
+<li><span style="font-size: 14pt;">Un preámbulo de 8 bytes </span>
+<ul>
+<li><span style="font-size: 14pt;">AAAAAAAB</span></li>
+<li><span style="font-size: 14pt;">Para que se sepa donde empieza</span></li>
+</ul>
+</li>
+<li><span style="font-size: 14pt;">La MAC de destino</span>
+<ul>
+<li><span style="font-size: 14pt;">AA:BB:CC:DD:EE:FF</span></li>
+<li><span style="font-size: 14pt;">Para saber donde va</span></li>
+</ul>
+</li>
+<li><span style="font-size: 14pt;">La MAC de origen</span>
+<ul>
+<li><span style="font-size: 14pt;">11:22:33:44:55:66</span></li>
+<li><span style="font-size: 14pt;">Para saber de donde viene</span></li>
+</ul>
+</li>
+<li><span style="font-size: 14pt;">Tipo o Longitud</span>
+<ul>
+<li><span style="font-size: 14pt;">Para saber su tamaño</span></li>
+</ul>
+</li>
+<li><span style="font-size: 14pt;">Los datos</span>
+<ul>
+<li><span style="font-size: 14pt;">Porque si no enviamos nada todo esto es una tontería</span></li>
+<li><span style="font-size: 14pt;">De 46 a 1500</span></li>
+</ul>
+</li>
+<li><span style="font-size: 14pt;">FCS</span>
+<ul>
+<li><span style="font-size: 14pt;">Un CRC</span></li>
+<li><span style="font-size: 14pt;">Para saber si se ha mandado bien</span></li>
+</ul>
+</li>
+<li><span style="font-size: 14pt;">IFG</span>
+<ul>
+<li><span style="font-size: 14pt;">No es parte de la trama</span></li>
+<li><span style="font-size: 14pt;">Es el hueco que hay que dejar después</span></li>
+<li><span style="font-size: 14pt;">x00000000</span><span style="font-size: 14pt;"><br></span><span style="font-size: 14pt;"></span></li>
+</ul>
+</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id1080">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">El hueco entre tramas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta1080_131" class="block instructions iDevice_content">
+<p><u>Lea y complete</u></p>
+</section>
+
+<section class="activity" id="activity-1080_132">
+<form name="cloze-form-1080_132" action="#" class="activity-form cloze-form">
+<div id="cloze1080_132">
+<input type="hidden" name="clozeVar1080_132.feedbackId" id="clozeVar1080_132.feedbackId" value="ta1080_133"/>
+
+<p>Al finalizar la transmisión de una trama, el 
+<label for="clozeBlank1080_132.0" class="sr-av">Rellenar huecos (1):</label>
+<select id="clozeBlank1080_132.0">
+<option selected="selected"> </option><option value="trama">trama</option><option value="emisor">emisor</option><option value=" routers "> routers </option><option value=" horas "> horas </option><option value=" paquete"> paquete</option><option value="hueco entre tramas">hueco entre tramas</option><option value="bytes">bytes</option><option value="receptor ">receptor </option><option value="dispositivos">dispositivos</option><option value=" preámbulo "> preámbulo </option>
+</select>
+<span style="display:none" id="clozeAnswer1080_132.0">JXUwMDNkJXUwMDA4JXUwMDA0JXUwMDFhJXUwMDFjJXUwMDFk</span>
+ está sin transmitir el tiempo equivalente a la transmisión de 12 
+<label for="clozeBlank1080_132.1" class="sr-av">Rellenar huecos (2):</label>
+<select id="clozeBlank1080_132.1">
+<option selected="selected"> </option><option value="trama">trama</option><option value="emisor">emisor</option><option value=" routers "> routers </option><option value=" horas "> horas </option><option value=" paquete"> paquete</option><option value="hueco entre tramas">hueco entre tramas</option><option value="bytes">bytes</option><option value="receptor ">receptor </option><option value="dispositivos">dispositivos</option><option value=" preámbulo "> preámbulo </option>
+</select>
+<span style="display:none" id="clozeAnswer1080_132.1">JXUwMDNhJXUwMDFiJXUwMDBkJXUwMDExJXUwMDE2</span>
+.<br/>A este tiempo se le conoce como «
+<label for="clozeBlank1080_132.2" class="sr-av">Rellenar huecos (3):</label>
+<select id="clozeBlank1080_132.2">
+<option selected="selected"> </option><option value="trama">trama</option><option value="emisor">emisor</option><option value=" routers "> routers </option><option value=" horas "> horas </option><option value=" paquete"> paquete</option><option value="hueco entre tramas">hueco entre tramas</option><option value="bytes">bytes</option><option value="receptor ">receptor </option><option value="dispositivos">dispositivos</option><option value=" preámbulo "> preámbulo </option>
+</select>
+<span style="display:none" id="clozeAnswer1080_132.2">JXUwMDMwJXUwMDFkJXUwMDEwJXUwMDA2JXUwMDBjJXUwMDRmJXUwMDQ1JXUwMDBiJXUwMDFhJXUwMDA2JXUwMDE3JXUwMDQ1JXUwMDU0JXUwMDA2JXUwMDEzJXUwMDBjJXUwMDBjJXUwMDEy</span>
+» (IFG, interframe gap).<br/>Proporciona a los 
+<label for="clozeBlank1080_132.3" class="sr-av">Rellenar huecos (4):</label>
+<select id="clozeBlank1080_132.3">
+<option selected="selected"> </option><option value="trama">trama</option><option value="emisor">emisor</option><option value=" routers "> routers </option><option value=" horas "> horas </option><option value=" paquete"> paquete</option><option value="hueco entre tramas">hueco entre tramas</option><option value="bytes">bytes</option><option value="receptor ">receptor </option><option value="dispositivos">dispositivos</option><option value=" preámbulo "> preámbulo </option>
+</select>
+<span style="display:none" id="clozeAnswer1080_132.3">JXUwMDNjJXUwMDBkJXUwMDFhJXUwMDAzJXUwMDFmJXUwMDFjJXUwMDFhJXUwMDFkJXUwMDFkJXUwMDFmJXUwMDE5JXUwMDFj</span>
+ el tiempo necesario para acabar de procesar la 
+<label for="clozeBlank1080_132.4" class="sr-av">Rellenar huecos (5):</label>
+<select id="clozeBlank1080_132.4">
+<option selected="selected"> </option><option value="trama">trama</option><option value="emisor">emisor</option><option value=" routers "> routers </option><option value=" horas "> horas </option><option value=" paquete"> paquete</option><option value="hueco entre tramas">hueco entre tramas</option><option value="bytes">bytes</option><option value="receptor ">receptor </option><option value="dispositivos">dispositivos</option><option value=" preámbulo "> preámbulo </option>
+</select>
+<span style="display:none" id="clozeAnswer1080_132.4">JXUwMDJjJXUwMDA2JXUwMDEzJXUwMDBjJXUwMDBj</span>
+ y prepararse para recibir la siguiente.</p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore1080_132" value="Comprobar"  id="getScore1080_132" />
+
+<input type="button" name="feedback1080_132" value="Mostrar retroalimentación" class="feedbackbutton cloze-feedback-toggler" />
+
+<input type="hidden" name="clozeOtras1080_132" id="clozeOtras1080_132" value="JXUwMDJhJXUwMDE3JXUwMDA2JXUwMDA2JXUwMDE1JXUwMDA0JXUwMDFiJXUwMDFkJXUwMDUyJXUwMDVjJXUwMDVjJXUwMDQ4JXUwMDA3JXUwMDFkJXUwMDEzJXUwMDEyJXUwMDUzJXUwMDVjJXUwMDVjJXUwMDUwJXUwMDAyJXUwMDE3JXUwMDg0JXUwMDhjJXUwMDBmJXUwMDE3JXUwMDE5JXUwMDAzJXUwMDRmJXUwMDVjJXUwMDVjJXUwMDUyJXUwMDFkJXUwMDFhJXUwMDAxJXUwMDExJXUwMDE3JXUwMDAxJXUwMDUzJXUwMDVjJXUwMDVjJXUwMDUwJXUwMDExJXUwMDEwJXUwMDA0JXUwMDEwJXUwMDExJXUwMDEx"/>
+
+<input type="hidden" name="clozeFlag1080_132.strictMarking" id="clozeFlag1080_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag1080_132.checkCaps" id="clozeFlag1080_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag1080_132.instantMarking" id="clozeFlag1080_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore1080_132"></div>
+</div>
+</form>
+</section>
+<section id="ta1080_133" class="feedback js-feedback iDevice_content" style="display:none">
+<p>Si no hubiera huecos se podrían perder tramas.</p>
+</section>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ScrambledListIdevice em_iDevice em_iDevice_activity" id="id883">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">La trama Ethernet II</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta883_1084_2" class="block iDevice_content">
+<div class="exe-sortableList"><div class="exe-sortableList-instructions"><p>Ordena los campos de la trama Ethernet II</p></div><ul class="exe-sortableList-list"><li>Preámbulo</li><li>MAC de destino</li><li>MAC de origen</li><li>Tipo/Longitud</li><li>Datos</li><li>FCS</li></ul><div style="display:none"><p class="exe-sortableList-buttonText">Comprobar</p><p class="exe-sortableList-rightText">¡Correcto!</p><div class="exe-sortableList-ideviceID js-hidden">2024610184634-120</div><div class="exe-sortableList-evaluationID js-hidden"></div><div class="exe-sortableList-evaluationMessages js-hidden">Actividad no completada#Actividad superada. Puntuación: %s#Actividad no superada. Puntuación: %s#Lista desordenada</div><p class="exe-sortableList-wrongText">No es correcto... Respuesta correcta:</p></div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper candadoIdevice em_iDevice" id="id1083">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Candado</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1083_973_2" class="block iDevice_content">
+<div class="candado-IDevice"><div class="candado-version js-hidden">1</div><div class="candado-instructions"><p>Esta es fácil:</p>
+<p>Primer número: Cuántos bytes tiene el preámbulo</p>
+<p>Segundo número: Cantidad máxima de datos que caben en una trama Ethernet II</p>
+<p>Tercer número: Número de bytes del CRC</p></div><div class="candado-retro"><p>Primer número: Cuántos bytes tiene el preámbulo (8)</p>
+<p>Segundo número: Cantidad máxima de datos que caben en una trama Ethernet II (1500)</p>
+<p>Tercer número: Número de bytes del CRC (4)</p></div><div class="candado-DataGame js-hidden" >%E9%B0%F1%F3%FC%F6%F3%F6%FD%C6%FB%FF%F7%B0%A8%A3%BE%B0%F1%F3%FC%F6%F3%F6%FD%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%AA%A3%A7%A2%A2%A6%B0%BE%B0%F1%F3%FC%F6%F3%F6%FD%DB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%B0%BE%B0%F1%F3%FC%F6%F3%F6%FD%C0%F7%E6%E0%FD%B0%A8%B0%B0%BE%B0%F1%F3%FC%F6%F3%F6%FD%C1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%F3%FC%F6%F3%F6%FD%C0%F7%F0%FD%FD%E6%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%F3%FC%F6%F3%F6%FD%D3%E6%E6%F7%FF%E2%E1%B0%A8%B0%A2%B0%BE%B0%F1%F3%FC%F6%F3%F6%FD%D7%E0%E0%FD%E0%DF%F7%E1%E1%F3%F5%F7%B0%A8%B0%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%DD%F9%B0%A8%B0%D3%F1%F7%E2%E6%F3%E0%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%DE%7F%FF%FB%E6%F7%B2%F6%F7%B2%E6%FB%F7%FF%E2%FD%B2%BA%FF%FF%A8%E1%E1%BB%B0%BE%B0%FF%E1%F5%DB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%DB%FC%E1%E6%E0%E7%F1%F1%FB%FD%FC%F7%E1%B0%BE%B0%FF%E1%F5%D4%F7%F7%F6%F0%F3%F1%F9%B0%A8%B0%C0%F7%E6%E0%FD%F3%FE%FB%FF%F7%FC%E6%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%D7%FC%E6%F7%E0%D1%FD%F6%F7%B0%A8%B0%DB%FC%E6%E0%FD%F6%E7%E8%F1%F3%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%D1%FD%F6%F7%B0%A8%B0%D7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B2%FC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%C0%F7%E3%E7%FB%E0%F7%F6%D3%F1%F1%F7%E1%E1%D9%F7%EB%B0%A8%B0%D7%E1%B2%FC%F7%F1%F7%E1%F3%E0%FB%FD%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%D7%C1%FA%FD%E5%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%DF%FD%E1%E6%E0%F3%E0%B2%FE%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B0%BE%B0%FF%E1%F5%C1%E7%F0%FF%FB%E6%B0%A8%B0%D1%FD%FF%E2%E0%FD%F0%F3%E0%B0%EF%EF</div><div class="candado-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="8_el_protocolo_ethernet_ii.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>11</strong> de <strong>13</strong></span> <span class="sep">| </span><a href="9_dispositivos_que_funcionan_al_nivel_de_la_capa_de_enlace_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

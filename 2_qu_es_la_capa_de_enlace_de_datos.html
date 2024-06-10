@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2. Qué es la capa de enlace de datos | La capa de enlace de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Varios" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<script type="text/javascript" src="cwordfind.js"></script>
+<link rel="stylesheet" type="text/css" href="sopa-activity.css" />
+<script type="text/javascript" src="sopa-activity.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-198"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">La capa de enlace de datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">La capa de enlace de datos</a></li>
+   <li><a href="1_repaso_de_la_pila_osi.html" class="no-ch">1. Repaso de la Pila OSI</a></li>
+   <li id="active"><a href="2_qu_es_la_capa_de_enlace_de_datos.html" class="active daddy">2. Qué es la capa de enlace de datos</a>
+   <ul>
+      <li><a href="21_servicios_de_la_capa_de_enlace_de_datos.html" class="no-ch">2.1 Servicios de la capa de enlace de datos</a></li>
+   </ul>
+   </li>
+   <li><a href="3_identificacin_mediante_direccionamiento_fsico.html" class="no-ch">3. Identificación mediante direccionamiento físico</a></li>
+   <li><a href="4_mtodos_para_acceder_al_medio.html" class="no-ch">4. Métodos para acceder al medio</a></li>
+   <li><a href="5_mtodos_de_control_de_errores.html" class="no-ch">5. Métodos de control de errores</a></li>
+   <li><a href="6_mtodos_de_conmutacin_de_tramas.html" class="no-ch">6. Métodos de conmutación de tramas</a></li>
+   <li><a href="7_protocolos_de_enlace_en_las_lan.html" class="no-ch">7. Protocolos de enlace en las LAN</a></li>
+   <li><a href="8_el_protocolo_ethernet_ii.html" class="daddy">8. El protocolo Ethernet II</a>
+   <ul class="other-section">
+      <li><a href="81_formato_de_la_trama_ethernet_ii.html" class="no-ch">8.1 Formato de la trama Ethernet II</a></li>
+   </ul>
+   </li>
+   <li><a href="9_dispositivos_que_funcionan_al_nivel_de_la_capa_de_enlace_de_datos.html" class="no-ch">9. Dispositivos que funcionan al nivel de la capa de enlace de datos</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="1_repaso_de_la_pila_osi.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>3</strong> de <strong>13</strong></span> <span class="sep">| </span><a href="21_servicios_de_la_capa_de_enlace_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2. Qué es la capa de enlace de datos</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id984">
+<div class="iDevice emphasis0" >
+<div id="ta984_431_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Diccionario</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-carousel">
+<h2>Nodo</h2>
+<p><img src="ordenador.jpeg" alt="Un ordenador" title="Un ordenador" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Dispositivos direccionables a nivel de red.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Un ordenador, una impresora, un router...</p>
+</dd>
+</dl>
+<h2>Dispositivo de acceso al medio</h2>
+<p><img src="switch.jpeg" alt="Un switch en una red lan" title="Switch" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Dispositivos NO direccionables. Funcionan al nivel de las capas de enlace y<br>física. Dan un punto de acceso a un medio de transmisión</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Un Switch, un punto de acceso inalámbrico...</p>
+</dd>
+</dl>
+<h2>Enlace</h2>
+<p><img src="rj45.jpeg" alt="Un cable utp" title="Un cable utp" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Canal de transmisión que une varios nodos adyacentes entre sí. Pueden ser <strong>punto a</strong> punto o <strong>de difusión</strong></p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Un cable UTP, o el Aire si la transmisión es wireless</p>
+</dd>
+</dl>
+<h2>Tarjeta de Red</h2>
+<p><img src="tarjeta_red.jpeg" alt="Una tarjeta de red" title="Tarjeta de red" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>La tarjeta de red (NIC) es donde se implementan los servicios del la capa de enlace.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Un ordenador, una impresora, un router...</p>
+</dd>
+</dl>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id985">
+<div class="iDevice emphasis0" >
+<div id="ta985_964_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure exe-image float-left license-custom" style="width: 250px;"><img src="retor_adultos_conbocadillo.gif" alt="Rétor dice" width="250" height="250" style="float: left;"></figure>
+<p>Vale, el punto anterior era un pequeño repaso de la pila OSI que nos ha servido de introducción. Ahora es cuando vamos al lío. Conocer el funcionamiento de la Capa de enlace de datos, tiene dos ventajas. La primera es poder aprender a usar (el curso que viene) el programa WireShark para detectar problemas en la red local. El segundo (y no menos importante) es comprender que todo funciona de una una forma «mecánica» y que no hay duendes mágicos haciendo funcionar nuestras máquinas.</p>
+<p>Así que ¡ánimo!, espero poder despertar tu curiosidad.</p>
+</div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id986">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">1. ¿De qué cosas se encarga la capa de enlace de datos?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta986_432_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>No los sé, pero lo voy a aprender</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure exe-image float-left license-custom" style="width: 125px;"><img src="retor_adultos_conbocadillo.gif" width="500" height="500" style="float: left;" alt="Rétor dice">
+<figcaption class="figcaption"></figcaption>
+</figure>
+<p>La capa de enlace de datos se encarga de gestionar el proceso de transmisión, a<br>través de un enlace fisco determinado.</p>
+<p>Proporcionar fiabilidad.</p>
+<p>Proporciona multitud de Servicios (te los cuento en el siguiente punto).</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_reproduccion" id="id988">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reproduccion.svg)"><h1 class="iDeviceTitle">Video: Qué es la capa de enlace de datos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta988_971_2" class="block iDevice_content">
+<div class="exe-text"><p>Hola, aquí tienes un vídeo muy corto para que puedas recordar lo que hemos dado en clase. Míralo antes de hacer los ejercicios.</p>
+<figure class="exe-figure exe-media position-center" style="width: 600px;"><video width="600" height="338" controls="controls">
+<source src="https://juanivazquez.es/videos/video_2_1.mp4" type="video/mp4" /></video>
+<figcaption class="figcaption"><span class="title"><em>Qué es la capa de enlace de datos</em></span></figcaption>
+</figure>
+<p style="text-align: center;"></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p>Dime la diferencia entre un <strong>nodo</strong> y un <strong>dispositivo de acceso al medio</strong>.</p>
+<p>Pon ejemplos de <strong>enlace punto a punto</strong> y <strong>enlaces de difusión</strong>.</p>
+<p>¿Para qué sirven las memorias de la tarjeta de red?</p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id989">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">Chuletario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta989_434_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ol>
+<li>
+<p>La capa de enlace de datos se encarga de:</p>
+<ul>
+<li>Gestionar el proceso de transmisión, a través de un enlace fisco determinado.</li>
+<li>Proporcionar fiabilidad.</li>
+<li>Ofrece una serie de servicios.</li>
+</ul>
+</li>
+<li>
+<p>&nbsp;Diferencia entre un nodo y un dispositivo de acceso al medio.</p>
+<ul>
+<li>El nodo es direccionable a nivel de red (tiene IP).</li>
+<li>Los dispositivos de acceso al medio funcionan a nivel de la capa de enlace y la física.</li>
+</ul>
+</li>
+<li>
+<p>&nbsp;La tarjeta de interfaz de red (NIC).</p>
+<ul>
+<li>Es la parte del dispositivo donde se implementan los servicios de la capa de enlace.</li>
+<li>Tiene una memoria ROM donde guarda la dirección MAC</li>
+</ul>
+</li>
+<li>
+<p>Subcapas MAC y LCC</p>
+<ul>
+<li>A veces la capa de enlace se divide en dos<br>
+<ul>
+<li>La subcapa LLC (control del enlace lógico) se encarga de la multiplexación de protocolos</li>
+<li>La subcapa MAC (control de acceso al medio) se encarga del direccionamiento físico y del envío y recepción de tramas.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id990">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Diferencia entre nodo y dispositivo de acceso</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta990_131" class="block instructions iDevice_content">
+<p><u>Lee y completa</u></p>
+</section>
+
+<section class="activity" id="activity-990_132">
+<form name="cloze-form-990_132" action="#" class="activity-form cloze-form">
+<div id="cloze990_132">
+<input type="hidden" name="clozeVar990_132.feedbackId" id="clozeVar990_132.feedbackId" value="ta990_133"/>
+
+<p>Los nodos son dispositivos direccionables a nivel de la capa de    
+<label for="clozeBlank990_132.0" class="sr-av">Rellenar huecos (1):</label>
+<select id="clozeBlank990_132.0">
+<option selected="selected"> </option><option value="física">física</option><option value=" sesión "> sesión </option><option value=" transporte "> transporte </option><option value=" presentación "> presentación </option><option value=" física"> física</option><option value="aplicación ">aplicación </option><option value="enlace">enlace</option><option value=" enlace "> enlace </option><option value=" red "> red </option><option value="red">red</option>
+</select>
+<span style="display:none" id="clozeAnswer990_132.0">JXUwMDJhJXUwMDE3JXUwMDAx</span>
+    y por lo tanto tienen dirección ip.<br/>Los dispositivos de acceso al medio funcionan al nivel de la capa de    
+<label for="clozeBlank990_132.1" class="sr-av">Rellenar huecos (2):</label>
+<select id="clozeBlank990_132.1">
+<option selected="selected"> </option><option value="física">física</option><option value=" sesión "> sesión </option><option value=" transporte "> transporte </option><option value=" presentación "> presentación </option><option value=" física"> física</option><option value="aplicación ">aplicación </option><option value="enlace">enlace</option><option value=" enlace "> enlace </option><option value=" red "> red </option><option value="red">red</option>
+</select>
+<span style="display:none" id="clozeAnswer990_132.1">JXUwMDNkJXUwMDBiJXUwMDAyJXUwMDBkJXUwMDAyJXUwMDA2</span>
+    y de la capa    
+<label for="clozeBlank990_132.2" class="sr-av">Rellenar huecos (3):</label>
+<select id="clozeBlank990_132.2">
+<option selected="selected"> </option><option value="física">física</option><option value=" sesión "> sesión </option><option value=" transporte "> transporte </option><option value=" presentación "> presentación </option><option value=" física"> física</option><option value="aplicación ">aplicación </option><option value="enlace">enlace</option><option value=" enlace "> enlace </option><option value=" red "> red </option><option value="red">red</option>
+</select>
+<span style="display:none" id="clozeAnswer990_132.2">JXUwMDNlJXUwMDhiJXUwMDllJXUwMDFhJXUwMDBhJXUwMDAy</span>
+    .<br/><br/></p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore990_132" value="Comprobar"  id="getScore990_132" />
+
+<input type="button" name="feedback990_132" value="Mostrar retroalimentación" class="feedbackbutton cloze-feedback-toggler" />
+
+<input type="hidden" name="clozeOtras990_132" id="clozeOtras990_132" value="JXUwMDM5JXUwMDExJXUwMDFjJXUwMDA1JXUwMDBhJXUwMDAyJXUwMDAyJXUwMDBhJXUwMDlhJXUwMDlkJXUwMDRlJXUwMDVjJXUwMDVjJXUwMDUwJXUwMDAyJXUwMDE3JXUwMDE2JXUwMDE2JXUwMDBiJXUwMDFhJXUwMDE1JXUwMDAyJXUwMDBhJXUwMDlhJXUwMDlkJXUwMDRlJXUwMDVjJXUwMDVjJXUwMDUzJXUwMDE2JXUwMDE2JXUwMDFhJXUwMDlhJXUwMDlkJXUwMDRlJXUwMDVjJXUwMDVjJXUwMDU0JXUwMDA2JXUwMDEzJXUwMDBmJXUwMDFkJXUwMDAzJXUwMDFmJXUwMDFkJXUwMDA2JXUwMDExJXUwMDQ1JXUwMDVjJXUwMDVjJXUwMDUyJXUwMDE3JXUwMDAxJXUwMDQ0JXUwMDVjJXUwMDVjJXUwMDQ1JXUwMDBiJXUwMDAyJXUwMDBkJXUwMDAyJXUwMDA2JXUwMDQ1JXUwMDVjJXUwMDVjJXUwMDQ2JXUwMDhiJXUwMDllJXUwMDFhJXUwMDBhJXUwMDAy"/>
+
+<input type="hidden" name="clozeFlag990_132.strictMarking" id="clozeFlag990_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag990_132.checkCaps" id="clozeFlag990_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag990_132.instantMarking" id="clozeFlag990_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore990_132"></div>
+</div>
+</form>
+</section>
+<section id="ta990_133" class="feedback js-feedback iDevice_content" style="display:none">
+<p>Los nodos son los dispositvos que tienen dirección IP: Ordenadores, impresoras, routers, teléfonos móviles...</p>
+<p>Los dispositivos de acceso están una (o dos) capas por debajo y no tienen IP: Swithces, Hubs, Access Points, Bridges...</p>
+</section>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper SopaIdevice em_iDevice em_iDevice_udl_exp_juego" id="id870">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_juego.svg)"><h1 class="iDeviceTitle">Sopa de letras</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta870_1077_2" class="block iDevice_content">
+<div class="sopa-IDevice"><div class="sopa-version js-hidden">2</div><div class="sopa-feedback-game"></div><div class="sopa-instructions gameQP-instructions"><p>Busca las partes de una tarjeta de red</p></div><div class="sopa-DataGame js-hidden">%E9%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C1%FD%E2%F3%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%AE%E2%AC%D0%E7%E1%F1%F3%B2%FE%F3%E1%B2%E2%F3%E0%E6%F7%E1%B2%F6%F7%B2%E7%FC%F3%B2%E6%F3%E0%F8%F7%E6%F3%B2%F6%F7%B2%E0%F7%F6%AE%BD%E2%AC%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%E5%FD%E0%F6%E1%D5%F3%FF%F7%B0%A8%C9%E9%B0%E5%FD%E0%F6%B0%A8%B0%D1%FD%FC%F7%F1%E6%FD%E0%B0%BE%B0%F6%F7%F4%FB%FC%FB%E6%FB%FD%FC%B0%A8%B0%D7%E1%B2%F7%FE%B2%E1%FB%E6%FB%FD%B2%F6%FD%FC%F6%F7%B2%E1%F7%B2%F7%FC%F1%FA%E7%F4%F3%B2%F7%FE%B2%C0%D8%A6%A7%B2%BA%E2%FD%E0%B2%F7%F8%F7%FF%E2%FE%FD%BB%B0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%FC%E7%FE%FE%EF%BE%E9%B0%E5%FD%E0%F6%B0%A8%B0%C6%E0%F3%FC%E1%F1%F7%E2%E6%FD%E0%B0%BE%B0%F6%F7%F4%FB%FC%FB%E6%FB%FD%FC%B0%A8%B0%D7%E1%B2%FE%F3%B2%E2%F3%E0%E6%F7%B2%F6%F7%B2%FE%F3%B2%E6%F3%E0%F8%F7%E6%F3%B2%E3%E7%F7%B2%F1%FD%FC%E4%FB%F7%E0%E6%F7%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B2%F7%FC%B2%FE%F3%E1%B2%E1%F7c%F3%FE%F7%E1%B2%E3%E7%F7%B2%E1%F7%B2%FF%F3%FC%F6%F3%FC%B2%B0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%FC%E7%FE%FE%EF%BE%E9%B0%E5%FD%E0%F6%B0%A8%B0%D1%FA%FB%E2%B0%BE%B0%F6%F7%F4%FB%FC%FB%E6%FB%FD%FC%B0%A8%B0%BA%F1%FA%FB%E2%B2%F1%FD%FC%E6%E0%FD%FE%F3%F6%FD%E0%BB%B2%F7%E1%B2%F7%FE%B2%E3%E7%F7%B2%FE%FE%F7%E4%F3%B2%F3%B2%F1%F3%F0%FD%B2%FE%F3%E1%B2%F4%E7%FC%F1%FB%FD%FC%F7%E1%B2%F6%F7%B2%FE%F3%B2%F1%F3%E2%F3%B2%F6%F7%B2%F7%FC%FE%F3%F1%F7%B0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%FC%E7%FE%FE%EF%BE%E9%B0%E5%FD%E0%F6%B0%A8%B0%D0%E7%F4%F4%F7%E0%B0%BE%B0%F6%F7%F4%FB%FC%FB%E6%FB%FD%FC%B0%A8%B0%DF%F7%FF%FD%E0%FB%F3%B2%FB%FC%E6%F7%E0%FC%F3%B2%E2%F3%E0%F3%B2%FB%F5%E7%F3%FE%F3%E0%B2%FE%F3%B2%E4%F7%FE%FD%F1%FB%F6%F3%F6%B2%F6%F7%B2%FE%F3%B2%E0%F7%F6%B2%EB%B2%F7%FE%B2%F6%FB%E1%E2%FD%E1%FB%E6%FB%E4%FD%B0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%FC%E7%FE%FE%EF%BE%E9%B0%E5%FD%E0%F6%B0%A8%B0%C0%DD%DF%B0%BE%B0%F6%F7%F4%FB%FC%FB%E6%FB%FD%FC%B0%A8%B0%DF%F7%FF%FD%E0%FB%F3%B2%F6%FD%FC%F6%F7%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%B2%FE%F3%B2%F6%FB%E0%F7%F1%F1%FBa%FC%B2%DF%D3%D1%B0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%FC%E7%FE%FE%EF%BE%E9%B0%E5%FD%E0%F6%B0%A8%B0%D0%C7%C1%B0%BE%B0%F6%F7%F4%FB%FC%FB%E6%FB%FD%FC%B0%A8%B0%DE%F3%B2%E6%F3%E0%F8%F7%E6%F3%B2%E1%F7%B2%F1%FD%FC%F7%F1%E6%F3%B2%F3%FE%B2%F6%FB%E1%E2%FD%E1%FB%E6%E4%FD%B2%FF%F7%F6%FB%F3%FC%E6%F7%B2%E7%FC%B2%F0%E7%E1%B0%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%E7%E0%FE%B0%A8%B0%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%FC%E7%FE%FE%EF%CF%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%D5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A3%A2%A2%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A3%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%A3%A2%A2%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%F6%FB%F3%F5%FD%FC%F3%FE%E1%B0%A8%E6%E0%E7%F7%BE%B0%E0%F7%E4%F7%E0%E1%F7%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%E1%FA%FD%E5%C0%F7%E1%FD%FE%E4%F7%B0%A8%E6%E0%E7%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%B0%BE%B0%FB%F6%B0%A8%B0%A0%A2%A0%A6%A4%AB%A0%A3%A0%A0%A3%BF%A3%A0%A2%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%C0%F7%E2%FE%EB%B0%A8%B0%C0%F7%E1%E2%FD%FC%F6%F7%E0%B0%BE%B0%FF%E1%F5%D7%FC%E6%F7%E0%D1%FD%F6%F7%B0%A8%B0%DB%FC%E6%E0%FD%F6%E7%E8%F1%F3%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%D1%FD%F6%F7%B0%A8%B0%D7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B2%FC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%E2%FB%E1%E6%F3%B2%F7%E1%A8%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F8%E7%F5%F3%E0%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%E1%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%DE%7F%FF%FB%E6%F7%B2%F6%F7%B2%E6%FB%F7%FF%E2%FD%B2%BA%FF%FF%A8%E1%E1%BB%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C2%F3%FC%E6%F3%FE%FE%F3%B2%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C1%F3%FE%FB%E0%B2%F6%F7%FE%B2%FF%FD%F6%FD%B2%E2%F3%FC%E6%F3%FE%FE%F3%B2%F1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%DCh%FF%F7%E0%FD%B2%F6%F7%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B0%BE%B0%FF%E1%F5%DC%FD%DB%FF%F3%F5%F7%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B2%E1%FB%FC%B2%FB%FFs%F5%F7%FC%F7%E1%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%DC%F7%F1%F7%E1%FB%E6%F3%B2%F3%FE%B2%FF%F7%FC%FD%E1%B2%E7%FC%B2%B7%E1%B7%B2%F6%F7%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%E2%F3%E0%F3%B2%F1%FD%FC%E1%F7%F5%E7%FB%E0%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%BC%B2%C4%E7%F7%FE%E4%F3%B2%F3%B2%FB%FC%E6%F7%FC%E6%F3%E0%FE%FD%BC%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%DE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%FC%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E2%FD%E0%E3%E7%F7%B2%F7%E1%E6%F3%B2%E2s%F5%FB%FC%F3%B2%FC%FD%B2%F4%FD%E0%FF%F3%B2%E2%F3%E0%E6%F7%B2%B2%F6%F7%B2%E7%FC%B2%E2%F3%E3%E7%F7%E6%F7%B2%C1%D1%DD%C0%DF%BC%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B03%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E7%FC%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%DB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B2%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E6%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%F1%FD%FF%FD%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%DE%F3%B2h%FE%E6%FB%FF%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F5%E7%F3%E0%F6%F3%F6%F3%B2%F7%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%F3%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%C2%E7%F7%F6%F7%B2%E0%F7%F3%FE%FB%E8%F3%E0%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B2%F1%E7%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%D1%F7%E0%E0%F3%E0%B0%BE%B0%FF%E1%F5%C2%FD%FB%FC%E6%E1%B0%A8%B0%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%D3%E7%F6%FB%FD%B0%A8%B0%D3%E7%F6%FB%FD%B0%BE%B0%FF%E1%F5%C5%FD%E0%F6%E1%D4%FB%FC%F6%B0%A8%B0%DA%F3%E1%B2%F7%FC%F1%FD%FC%E6%E0%F3%F6%FD%B2%E6%FD%F6%F3%E1%B2%FE%F3%E1%B2%E2%F3%FE%F3%F0%E0%F3%E1%BC%B2%C6%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F7%E1%B2%B7%E1%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%DB%FC%FB%F1%FB%F3%B2%F7%FE%B2%F8%E7%F7%F5%FD%BC%BC%BC%B0%BE%B0%FF%F5%E1%D5%F3%FF%F7%C1%E6%F3%E0%E6%B0%A8%B0%D7%FE%B2%F8%E7%F7%F5%FD%B2%EB%F3%B2%FA%F3%B2%F1%FD%FF%F7%FC%E8%F3%F6%FD%BC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D7%FC%F6%C6%FB%FF%F7%B0%A8%B0%D3%F1%F3%F0a%B2%F7%FE%B2%E6%FB%F7%FF%E2%FD%B2%F6%F7%B2%F8%E7%F7%F5%FD%BC%B2%C6%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F7%E1%B2%B7%E1%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%B0%A8%B0%D4%FB%FC%F3%FE%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%DF%B0%A8%B0%DA%F3%E1%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%FD%B2%F7%FE%B2%F8%E7%F7%F5%FD%BC%B2%C6%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F7%E1%B2%B7%E1%BC%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%F3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C1%FD%E2%F3%B2%F6%F7%B2%FE%F7%E6%E0%F3%E1%B0%EF%EF</div><a href="" class="js-hidden sopa-LinkImages">0</a><a href="" class="js-hidden sopa-LinkImages">1</a><a href="" class="js-hidden sopa-LinkImages">2</a><a href="" class="js-hidden sopa-LinkImages">3</a><a href="" class="js-hidden sopa-LinkImages">4</a><a href="" class="js-hidden sopa-LinkImages">5</a><div class="sopa-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="1_repaso_de_la_pila_osi.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>3</strong> de <strong>13</strong></span> <span class="sep">| </span><a href="21_servicios_de_la_capa_de_enlace_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

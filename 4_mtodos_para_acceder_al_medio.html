@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4. Métodos para acceder al medio | La capa de enlace de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Varios" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<link rel="stylesheet" type="text/css" href="scrambled-list.css" />
+<script type="text/javascript" src="scrambled-list.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-204"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">La capa de enlace de datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">La capa de enlace de datos</a></li>
+   <li><a href="1_repaso_de_la_pila_osi.html" class="no-ch">1. Repaso de la Pila OSI</a></li>
+   <li><a href="2_qu_es_la_capa_de_enlace_de_datos.html" class="daddy">2. Qué es la capa de enlace de datos</a>
+   <ul class="other-section">
+      <li><a href="21_servicios_de_la_capa_de_enlace_de_datos.html" class="no-ch">2.1 Servicios de la capa de enlace de datos</a></li>
+   </ul>
+   </li>
+   <li><a href="3_identificacin_mediante_direccionamiento_fsico.html" class="no-ch">3. Identificación mediante direccionamiento físico</a></li>
+   <li id="active"><a href="4_mtodos_para_acceder_al_medio.html" class="active no-ch">4. Métodos para acceder al medio</a></li>
+   <li><a href="5_mtodos_de_control_de_errores.html" class="no-ch">5. Métodos de control de errores</a></li>
+   <li><a href="6_mtodos_de_conmutacin_de_tramas.html" class="no-ch">6. Métodos de conmutación de tramas</a></li>
+   <li><a href="7_protocolos_de_enlace_en_las_lan.html" class="no-ch">7. Protocolos de enlace en las LAN</a></li>
+   <li><a href="8_el_protocolo_ethernet_ii.html" class="daddy">8. El protocolo Ethernet II</a>
+   <ul class="other-section">
+      <li><a href="81_formato_de_la_trama_ethernet_ii.html" class="no-ch">8.1 Formato de la trama Ethernet II</a></li>
+   </ul>
+   </li>
+   <li><a href="9_dispositivos_que_funcionan_al_nivel_de_la_capa_de_enlace_de_datos.html" class="no-ch">9. Dispositivos que funcionan al nivel de la capa de enlace de datos</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_identificacin_mediante_direccionamiento_fsico.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>13</strong></span> <span class="sep">| </span><a href="5_mtodos_de_control_de_errores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4. Métodos para acceder al medio</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id1014">
+<div class="iDevice emphasis0" >
+<div id="ta1014_431_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Diccionario</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Interferencia</h2>
+<p><img src="interferencias.jpeg" alt="Interferencias" title="Interferencias" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Es cuando dos o más señales se solapan y no se pueden distinguir bien.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Cuando todo el mundo habla a la vez en clase y no se entiende lo que dice nadie</p>
+</dd>
+</dl>
+<h2>Testigo</h2>
+<p><img src="testigo.jpeg" title="testigo" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125" alt="testigo"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Es la trama que se pasan los dispositivos en una red con paso de testigo.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Es el elemento que se pasan los corredores en una carrera de relevos.</p>
+</dd>
+</dl>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id1015">
+<div class="iDevice emphasis0" >
+<div id="ta1015_964_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure exe-image float-left license-custom" style="width: 250px;"><img src="retor_adultos_conbocadillo.gif" alt="Rétor dice" width="250" height="250" style="float: left;"></figure>
+<p><br><br><br>Ya casi vamos por la mitad del tema ¡No ha sido tan duro!</p>
+<p>Veamos como se hace en la capa de enlace de datos para acceder al medio y que no se pierdan las tramas.</p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_reproduccion" id="id1018">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reproduccion.svg)"><h1 class="iDeviceTitle">Video: Métodos para acceder al medio</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1018_971_2" class="block iDevice_content">
+<div class="exe-text"><p>Hola, aquí tienes un vídeo muy corto para que puedas recordar lo que hemos dado en clase. Míralo antes de hacer los ejercicios.</p>
+<figure class="exe-figure exe-media position-center" style="width: 600px;"><video width="600" height="338" controls="controls">
+<source src="https://juanivazquez.es/videos/video_4_1.mp4" type="video/mp4" /></video>
+<figcaption class="figcaption"><span class="title"><em>Métodos para acceder al medio</em></span></figcaption>
+</figure>
+<p style="text-align: center;"></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id1019">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">Chuletario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1019_434_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ol>
+<li><span style="font-size: 14pt;">La pila OSI es un Protocolo de Comunicación para redes de ordenadores.</span>
+<ol>
+<li><span style="font-size: 14pt;">Tiene siete capas.</span></li>
+<li><span style="font-size: 14pt;">Se divide la información en paquetes y las capas se pasan estos paquetes unas a otras.</span></li>
+<li><span style="font-size: 14pt;">Cada capa se ocupa de una cosa y tiene sus propios protocolos y dispositivos.</span></li>
+</ol>
+</li>
+<li><span style="font-size: 14pt;"><strong>Enlace físico</strong> es cuando se transmiten datos en la capa física.</span></li>
+<li><span style="font-size: 14pt;"><strong>Enlace lógico</strong> es cuando la misma capa de dos dispositivos distintos se quieren conectar.</span>
+<ol>
+<li><span style="font-size: 14pt;">Hacen llegar la información a la capa física</span></li>
+<li><span style="font-size: 14pt;">La capa física transmite la información</span></li>
+</ol>
+</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id1020">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Métodos basados en el particionado del canal</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta1020_131" class="block instructions iDevice_content">
+<p><u>Lea y complete</u></p>
+</section>
+
+<section class="activity" id="activity-1020_132">
+<form name="cloze-form-1020_132" action="#" class="activity-form cloze-form">
+<div id="cloze1020_132">
+<input type="hidden" name="clozeVar1020_132.feedbackId" id="clozeVar1020_132.feedbackId" value="ta1020_133"/>
+
+<p>Hay tres tipos de métodos de acceso al medio basados en el particionado del canal:</p>
+<ul>
+<li>Particionado del 
+<label for="clozeBlank1020_132.0" class="sr-av">Rellenar huecos (1):</label>
+<select id="clozeBlank1020_132.0">
+<option selected="selected"> </option><option value="frecuencia">frecuencia</option><option value="tiempo">tiempo</option><option value="amplitud ">amplitud </option><option value=" fuente"> fuente</option><option value=" espacio "> espacio </option><option value="código">código</option>
+</select>
+<span style="display:none" id="clozeAnswer1020_132.0">JXUwMDJjJXUwMDFkJXUwMDBjJXUwMDA4JXUwMDFkJXUwMDFm</span>
+ de uso del canal (TDM)</li>
+<li>Particionado del 
+<label for="clozeBlank1020_132.1" class="sr-av">Rellenar huecos (2):</label>
+<select id="clozeBlank1020_132.1">
+<option selected="selected"> </option><option value="frecuencia">frecuencia</option><option value="tiempo">tiempo</option><option value="amplitud ">amplitud </option><option value=" fuente"> fuente</option><option value=" espacio "> espacio </option><option value="código">código</option>
+</select>
+<span style="display:none" id="clozeAnswer1020_132.1">JXUwMDNlJXUwMDE0JXUwMDE3JXUwMDA2JXUwMDE2JXUwMDEwJXUwMDBiJXUwMDBkJXUwMDBhJXUwMDA4</span>
+ del canal (FDM)</li>
+<li>Acceso múltiple por división de 
+<label for="clozeBlank1020_132.2" class="sr-av">Rellenar huecos (3):</label>
+<select id="clozeBlank1020_132.2">
+<option selected="selected"> </option><option value="frecuencia">frecuencia</option><option value="tiempo">tiempo</option><option value="amplitud ">amplitud </option><option value=" fuente"> fuente</option><option value=" espacio "> espacio </option><option value="código">código</option>
+</select>
+<span style="display:none" id="clozeAnswer1020_132.2">JXUwMDNiJXUwMDkwJXUwMDk3JXUwMDBkJXUwMDBlJXUwMDA4</span>
+ (CDMA)</li>
+</ul>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore1020_132" value="Comprobar"  id="getScore1020_132" />
+
+<input type="button" name="feedback1020_132" value="Mostrar retroalimentación" class="feedbackbutton cloze-feedback-toggler" />
+
+<input type="hidden" name="clozeOtras1020_132" id="clozeOtras1020_132" value="JXUwMDM5JXUwMDBjJXUwMDFkJXUwMDFjJXUwMDA1JXUwMDFkJXUwMDAxJXUwMDExJXUwMDQ0JXUwMDVjJXUwMDVjJXUwMDQ1JXUwMDE2JXUwMDAzJXUwMDExJXUwMDAyJXUwMDBhJXUwMDA2JXUwMDRmJXUwMDVjJXUwMDVjJXUwMDQ2JXUwMDEzJXUwMDEwJXUwMDBiJXUwMDFhJXUwMDEx"/>
+
+<input type="hidden" name="clozeFlag1020_132.strictMarking" id="clozeFlag1020_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag1020_132.checkCaps" id="clozeFlag1020_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag1020_132.instantMarking" id="clozeFlag1020_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore1020_132"></div>
+</div>
+</form>
+</section>
+<section id="ta1020_133" class="feedback js-feedback iDevice_content" style="display:none">
+<p>Puedes repartir el tiempo de uso en partes iguales, o repartir las frecuencias del canal o usar un código especial que evite las interferencias.</p>
+</section>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ScrambledListIdevice em_iDevice em_iDevice_activity" id="id1021">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Métodos basados en el acceso aleatorio</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1021_969_2" class="block iDevice_content">
+<div class="exe-sortableList"><div class="exe-sortableList-instructions"><p>Ordena Métodos basados en el acceso aleatorio según lo seguros que son (de menor a mayor)</p></div><ul class="exe-sortableList-list"><li>Aloha</li><li>CSMA</li><li>CSMA/CD</li><li>CSMA/CA</li></ul><div style="display:none"><p class="exe-sortableList-buttonText">Comprobar</p><p class="exe-sortableList-rightText">¡Correcto!</p><div class="exe-sortableList-ideviceID js-hidden">202468143944-120</div><div class="exe-sortableList-evaluationID js-hidden"></div><div class="exe-sortableList-evaluationMessages js-hidden">Actividad no completada#Actividad superada. Puntuación: %s#Actividad no superada. Puntuación: %s#Lista desordenada</div><p class="exe-sortableList-wrongText">No es correcto... La respuesta correcta es:</p></div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id882">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Métodos basados en la toma de turnos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta882_131" class="block instructions iDevice_content">
+Lea y complete
+</section>
+
+<section class="activity" id="activity-882_132">
+<form name="cloze-form-882_132" action="#" class="activity-form cloze-form">
+<div id="cloze882_132">
+<input type="hidden" name="clozeVar882_132.feedbackId" id="clozeVar882_132.feedbackId" value="ta882_133"/>
+
+<ul>
+<li>Protocolo de 
+<label for="clozeBlank882_132.0" class="sr-av">Rellenar huecos (1):</label>
+<select id="clozeBlank882_132.0">
+<option selected="selected"> </option><option value=" todo "> todo </option><option value="trama">trama</option><option value="testigo">testigo</option><option value=" paquete "> paquete </option><option value="encuesta ">encuesta </option><option value=" nodo esclavo "> nodo esclavo </option><option value=" mirada "> mirada </option><option value="nodo maestro">nodo maestro</option><option value=" entregada"> entregada</option><option value="sondeo">sondeo</option>
+</select>
+<span style="display:none" id="clozeAnswer882_132.0">JXUwMDJiJXUwMDFjJXUwMDAxJXUwMDBhJXUwMDAxJXUwMDBh</span>
+ (polling)
+<ul>
+<li>Un 
+<label for="clozeBlank882_132.1" class="sr-av">Rellenar huecos (2):</label>
+<select id="clozeBlank882_132.1">
+<option selected="selected"> </option><option value=" todo "> todo </option><option value="trama">trama</option><option value="testigo">testigo</option><option value=" paquete "> paquete </option><option value="encuesta ">encuesta </option><option value=" nodo esclavo "> nodo esclavo </option><option value=" mirada "> mirada </option><option value="nodo maestro">nodo maestro</option><option value=" entregada"> entregada</option><option value="sondeo">sondeo</option>
+</select>
+<span style="display:none" id="clozeAnswer882_132.1">JXUwMDM2JXUwMDAxJXUwMDBiJXUwMDBiJXUwMDRmJXUwMDRkJXUwMDBjJXUwMDA0JXUwMDE2JXUwMDA3JXUwMDA2JXUwMDFk</span>
+ dirige los turnos</li>
+</ul>
+</li>
+<li>Protocolo de paso de 
+<label for="clozeBlank882_132.2" class="sr-av">Rellenar huecos (3):</label>
+<select id="clozeBlank882_132.2">
+<option selected="selected"> </option><option value=" todo "> todo </option><option value="trama">trama</option><option value="testigo">testigo</option><option value=" paquete "> paquete </option><option value="encuesta ">encuesta </option><option value=" nodo esclavo "> nodo esclavo </option><option value=" mirada "> mirada </option><option value="nodo maestro">nodo maestro</option><option value=" entregada"> entregada</option><option value="sondeo">sondeo</option>
+</select>
+<span style="display:none" id="clozeAnswer882_132.2">JXUwMDJjJXUwMDExJXUwMDE2JXUwMDA3JXUwMDFkJXUwMDBlJXUwMDA4</span>
+ (token passing)
+<ul>
+<li>Hay una 
+<label for="clozeBlank882_132.3" class="sr-av">Rellenar huecos (4):</label>
+<select id="clozeBlank882_132.3">
+<option selected="selected"> </option><option value=" todo "> todo </option><option value="trama">trama</option><option value="testigo">testigo</option><option value=" paquete "> paquete </option><option value="encuesta ">encuesta </option><option value=" nodo esclavo "> nodo esclavo </option><option value=" mirada "> mirada </option><option value="nodo maestro">nodo maestro</option><option value=" entregada"> entregada</option><option value="sondeo">sondeo</option>
+</select>
+<span style="display:none" id="clozeAnswer882_132.3">JXUwMDJjJXUwMDA2JXUwMDEzJXUwMDBjJXUwMDBj</span>
+ especial de pequeño tamaño llamada testigo (token) que va siendo <span>intercambiada</span> entre los nodos según un orden preestablecido.</li>
+</ul>
+</li>
+</ul>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore882_132" value="Comprobar"  id="getScore882_132" />
+
+<input type="button" name="feedback882_132" value="Mostrar retroalimentación" class="feedbackbutton cloze-feedback-toggler" />
+
+<input type="hidden" name="clozeOtras882_132" id="clozeOtras882_132" value="JXUwMDNkJXUwMDBiJXUwMDBkJXUwMDE2JXUwMDEwJXUwMDE2JXUwMDA3JXUwMDE1JXUwMDQxJXUwMDVjJXUwMDVjJXUwMDRkJXUwMDA0JXUwMDFiJXUwMDEzJXUwMDA1JXUwMDA1JXUwMDQxJXUwMDVjJXUwMDVjJXUwMDRlJXUwMDAxJXUwMDBiJXUwMDBiJXUwMDRmJXUwMDQ1JXUwMDE2JXUwMDEwJXUwMDBmJXUwMDBkJXUwMDE3JXUwMDE5JXUwMDRmJXUwMDVjJXUwMDVjJXUwMDU0JXUwMDFiJXUwMDBiJXUwMDBiJXUwMDRmJXUwMDVjJXUwMDVjJXUwMDUwJXUwMDExJXUwMDEwJXUwMDA0JXUwMDEwJXUwMDExJXUwMDExJXUwMDQ1JXUwMDVjJXUwMDVjJXUwMDQ1JXUwMDBiJXUwMDFhJXUwMDA2JXUwMDE3JXUwMDAyJXUwMDA2JXUwMDA1JXUwMDA1"/>
+
+<input type="hidden" name="clozeFlag882_132.strictMarking" id="clozeFlag882_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag882_132.checkCaps" id="clozeFlag882_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag882_132.instantMarking" id="clozeFlag882_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore882_132"></div>
+</div>
+</form>
+</section>
+<section id="ta882_133" class="feedback js-feedback iDevice_content" style="display:none">
+<p>En la configuración Token Ring, la red tiene la topología lógica de un anillo y se van pasando el testigo entre los ordenadores.</p>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_identificacin_mediante_direccionamiento_fsico.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>13</strong></span> <span class="sep">| </span><a href="5_mtodos_de_control_de_errores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
